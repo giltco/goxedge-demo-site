@@ -102,9 +102,9 @@ var SITE_CONFIG = {
 
 
 
-  minvistaCTAUrl: 'updates/index.html',
+  minvistaCTAUrl: 'https://iseeworlds.com/',
 
-  minvistaCTALabel: '关注 Minvista',
+  minvistaCTALabel: '访问新见界 · iSeeWorlds',
 
   contactCTALabel: '联系作者'
 

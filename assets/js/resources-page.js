@@ -10,7 +10,7 @@
 
   var ACCESS_META = {
     public: { label: '公开查看', badgeClass: 'v63-access-badge v63-access-badge--public' },
-    minvista: { label: '通过 Minvista 获取', badgeClass: 'v63-access-badge v63-access-badge--minvista' },
+    minvista: { label: '通过新见界 · iSeeWorlds', badgeClass: 'v63-access-badge v63-access-badge--minvista' },
     'reader-exclusive': { label: '读者专享', badgeClass: 'v63-access-badge v63-access-badge--reader' },
     'purchase-required': { label: '需购买后获取', badgeClass: 'v63-access-badge v63-access-badge--purchase' },
     workshop: { label: '工作坊配套', badgeClass: 'v63-access-badge v63-access-badge--workshop' },
@@ -58,10 +58,14 @@
 
     var href = resolveLink(item, isHome);
     if (href) {
+      var external = /^https?:\/\//.test(href);
+      var attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
       return (
         '<a class="v62-resource-action v62-resource-action--link" href="' +
         escapeHtml(href) +
-        '">' +
+        '"' +
+        attrs +
+        '>' +
         escapeHtml(label) +
         '</a>'
       );

@@ -46,7 +46,7 @@ var OFFERS_CONFIG = {
 
       title: '入门资料与更新',
 
-      description: 'Starter eBook 等轻量资料将通过 Minvista 获取更新或领取指引。'
+      description: 'Starter eBook 等轻量资料将通过新见界 · iSeeWorlds 获取更新说明。'
 
     },
 
@@ -288,7 +288,7 @@ var OFFERS_CONFIG = {
 
       title: '入门资料与更新',
 
-      description: '帮助读者快速理解 GoxEDGE 模型与基本使用方式的轻量资料，将通过 Minvista 获取更新或领取指引。',
+      description: '帮助读者快速理解 GoxEDGE 模型与基本使用方式的轻量资料，将通过新见界 · iSeeWorlds 获取更新说明。',
 
       items: [
 
@@ -306,11 +306,11 @@ var OFFERS_CONFIG = {
 
           accessType: 'minvista',
 
-          actionLabel: '通过 Minvista 获取',
+          actionLabel: '访问新见界 · iSeeWorlds',
 
           priceLabel: '免费 / 领取方式待更新',
 
-          link: '../updates/index.html',
+          link: 'https://iseeworlds.com/',
 
           note: '用于快速理解 GoxEDGE 全球拓展战略模型的简版说明资料，适合首次接触本书方法框架的读者。'
 

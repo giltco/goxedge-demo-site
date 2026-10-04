@@ -22,7 +22,7 @@
       return bookValue(book, 'bookChineseTitle') + '阅读指南';
     },
     minvistaPage: function (book) {
-      return (book.minvistaName || 'Minvista') + ' 读者更新｜' + bookValue(book, 'bookChineseTitle');
+      return (book.minvistaName || '新见界 · iSeeWorlds') + '｜' + bookValue(book, 'bookChineseTitle');
     },
     modelPage: function (book) {
       return 'GoxEDGE 全球拓展战略模型｜' + bookValue(book, 'bookChineseTitle');
@@ -233,7 +233,7 @@
       setText(el, config.minvistaName || PLACEHOLDER, !hasValue(config.minvistaName));
     });
     document.querySelectorAll('[data-book-minvista-title]').forEach(function (el) {
-      setText(el, config.minvistaTitle || '通过 Minvista 获取更新', false);
+      setText(el, config.minvistaTitle || '通过新见界 · iSeeWorlds 获取作者更新', false);
     });
     document.querySelectorAll('[data-book-minvista-copy]').forEach(function (el) {
       setText(el, config.minvistaCopy || PLACEHOLDER, !hasValue(config.minvistaCopy));
@@ -248,25 +248,19 @@
     document.querySelectorAll('[data-book-minvista-qr]').forEach(function (container) {
       var path = config.minvistaQRCode;
       container.innerHTML = '';
-      if (hasValue(path)) {
-        var img = document.createElement('img');
-        img.src = resolveAssetPath(path);
-        img.alt = (config.minvistaName || 'Minvista') + ' 公众号二维码';
-        img.onerror = function () {
-          console.error('Minvista QR failed to load:', img.src);
-          container.innerHTML = '';
-          var note = document.createElement('p');
-          note.className = 'minvista-qr-placeholder';
-          note.textContent = '二维码即将更新';
-          container.appendChild(note);
-        };
-        container.appendChild(img);
-      } else {
-        var note = document.createElement('p');
-        note.className = 'minvista-qr-placeholder';
-        note.textContent = '二维码即将更新';
-        container.appendChild(note);
+      if (!hasValue(path)) {
+        container.hidden = true;
+        return;
       }
+      container.hidden = false;
+      var img = document.createElement('img');
+      img.src = resolveAssetPath(path);
+      img.alt = (config.minvistaName || '新见界 · iSeeWorlds') + ' 二维码';
+      img.onerror = function () {
+        container.innerHTML = '';
+        container.hidden = true;
+      };
+      container.appendChild(img);
     });
   }
 

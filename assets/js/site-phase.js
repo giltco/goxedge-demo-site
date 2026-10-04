@@ -146,8 +146,12 @@
     var root = siteRoot();
     var copy = GATE_COPY[flag] || {
       title: '内容暂不开放',
-      body: '该页面当前未对外公开。如需了解《出海战略》配套资源，请返回首页或通过 Minvista 获取更新。'
+      body: '该页面当前未对外公开。如需了解《出海战略》配套资源，请返回首页或通过新见界 · iSeeWorlds 获取更新。'
     };
+    var ctaUrl = config.minvistaCTAUrl || 'updates/index.html';
+    var ctaExternal = /^https?:\/\//.test(ctaUrl);
+    var ctaHref = ctaExternal ? ctaUrl : (root + ctaUrl);
+    var ctaAttrs = ctaExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
     var notice = document.createElement('section');
     notice.className = 'site-phase-notice';
     notice.innerHTML =
@@ -157,7 +161,7 @@
           '<p style="margin:0 0 20px">' + copy.body + '</p>' +
           '<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">' +
             (isEnabled('showResourcePreview') ? '<a class="v4-btn v4-btn-primary" href="' + root + 'resources/index.html">查看配套资源</a>' : '') +
-            (isEnabled('showMinvistaCTA') ? '<a class="v4-btn v4-btn-secondary" href="' + root + (config.minvistaCTAUrl || 'updates/index.html') + '">' + (config.minvistaCTALabel || '关注 Minvista') + '</a>' : '') +
+            (isEnabled('showMinvistaCTA') ? '<a class="v4-btn v4-btn-secondary" href="' + ctaHref + '"' + ctaAttrs + '>' + (config.minvistaCTALabel || '访问新见界 · iSeeWorlds') + '</a>' : '') +
             '<a class="v4-text-link" href="' + root + 'index.html">返回首页</a>' +
           '</div>' +
         '</div>' +

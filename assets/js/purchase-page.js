@@ -13,7 +13,7 @@
   var ACCESS_META = {
     'purchase-channel': { label: '购买渠道', badgeClass: 'v65-access-badge v65-access-badge--channel' },
     'ebook-channel': { label: '电子书渠道', badgeClass: 'v65-access-badge v65-access-badge--ebook' },
-    minvista: { label: '通过 Minvista 获取', badgeClass: 'v65-access-badge v65-access-badge--minvista' },
+    minvista: { label: '通过新见界 · iSeeWorlds', badgeClass: 'v65-access-badge v65-access-badge--minvista' },
     'purchase-required': { label: '需购买后获取', badgeClass: 'v65-access-badge v65-access-badge--purchase' },
     'reader-exclusive': { label: '读者专享', badgeClass: 'v65-access-badge v65-access-badge--reader' },
     workshop: { label: '工作坊配套', badgeClass: 'v65-access-badge v65-access-badge--workshop' },
@@ -57,10 +57,14 @@
     if (!label) return '';
 
     if (item.link) {
+      var external = /^https?:\/\//.test(item.link);
+      var attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
       return (
         '<a class="v65-offer-action v65-offer-action--link" href="' +
         escapeHtml(item.link) +
-        '">' +
+        '"' +
+        attrs +
+        '>' +
         escapeHtml(label) +
         '</a>'
       );

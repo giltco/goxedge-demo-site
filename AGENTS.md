@@ -42,7 +42,7 @@ The site supports book launch and reader follow-up:
 - GoxEDGE model explanation
 - Companion resources (charts, appendices, tools)
 - Chapter reading guidance
-- Minvista reader updates
+- iSeeWorlds author updates
 - Low-key reader / media / enterprise discussion contact
 
 It must **not** feel like a SaaS product, AI tool, consulting sales funnel, or GILTCO ecosystem site.
@@ -51,9 +51,9 @@ It must **not** feel like a SaaS product, AI tool, consulting sales funnel, or G
 
 ## Primary navigation (release-ready)
 
-首页 · 图书 · 模型 · 资源 · 章节 · Minvista · 联系
+首页 · 图书 · 模型 · 章节 · 资源 · 联系 · 关于
 
-**Do not show:** GILTOS Demo, GILTCO ecosystem, GoxGlobe as main CTA, case library, certification, academy, SaaS platform links.
+**Do not show:** GILTOS Demo, GILTCO ecosystem, GoxGlobe, case library, certification, academy, SaaS platform links.
 
 ---
 
@@ -61,7 +61,7 @@ It must **not** feel like a SaaS product, AI tool, consulting sales funnel, or G
 
 | File | Purpose |
 |------|---------|
-| `assets/js/book-config.js` | `BOOK_CONFIG` — titles, author, publisher, purchase links, Minvista, cover |
+| `assets/js/book-config.js` | `BOOK_CONFIG` — titles, author, publisher, purchase links, iSeeWorlds values, cover |
 | `assets/js/site-config.js` | `SITE_CONFIG` — `launchPhase` and `show*` flags |
 | `assets/js/resources-config.js` | Resource catalog (8 approved categories) |
 | `assets/js/chapters-config.js` | Reading paths + TOC (V10.3.0) |
@@ -85,7 +85,7 @@ showMinvistaCTA, showContactCTA, showEnterpriseInquiry: true
 
 - ISBN, publication date, cover image path
 - Purchase links (JD, Dangdang, ebook, WeChat Reading)
-- Minvista QR code image
+- iSeeWorlds QR code image (do not invent one; hide the QR if the asset is missing)
 - Download file URLs
 - Testimonials, recommendation names
 - Fake case study pages or company logos
@@ -98,8 +98,8 @@ Empty fields show graceful placeholders: 即将更新, 随书更新, 购买链�
 
 1. **GoxEDGE** — Model / method brand; companion resources for 《出海战略》.
 2. **GILTOS** — Hidden (`showGiltosDemo: false`). No demo CTAs in HTML or nav.
-3. **GILTCO / GoxGlobe** — Not main narrative. No ecosystem framing.
-4. **Minvista** — Official reader update and contact channel.
+3. **GILTCO / GoxGlobe** — No public relationship on goxedge.com.
+4. **新见界 · iSeeWorlds** — Author's personal content and professional site. Legacy JS keys may still use the `minvista` prefix.
 5. **Cases** — Book uses composite anonymized cases (Avora Motors, etc.); no public case detail pages.
 
 ---
@@ -118,7 +118,7 @@ Edit `book-config.js` when confirmed:
 
 - [ ] `publicationDate`, `isbn`, `coverImage`
 - [ ] `jdLink`, `dangdangLink`, `ebookLink`, `wechatReadingLink`
-- [ ] `minvistaQRCode`, `contactEmail`
+- [ ] `minvistaQRCode` (iSeeWorlds QR only if the real asset exists), `contactEmail`
 - [ ] `SITE_CONFIG.showDownloads` → true when files ready
 - [ ] `SITE_CONFIG.launchPhase` → `launch`
 - [ ] `sitemap.xml` verified

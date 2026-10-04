@@ -240,11 +240,11 @@ var RESOURCES_CONFIG = {
 
       accessType: 'minvista',
 
-      actionLabel: '通过 Minvista 获取',
+      actionLabel: '访问新见界 · iSeeWorlds',
 
-      link: '',
+      link: 'https://iseeworlds.com/',
 
-      note: '正式开放前，可通过 Minvista 关注后续更新。',
+      note: '正式开放前，可通过新见界 · iSeeWorlds 关注后续更新。',
 
       updatedAt: ''
 

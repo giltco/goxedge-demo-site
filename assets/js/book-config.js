@@ -58,17 +58,17 @@ var BOOK_CONFIG = {
 
   wechatReadingLink: '',
 
-  minvistaName: 'Minvista 思维实验室',
+  minvistaName: '新见界 · iSeeWorlds',
 
-  minvistaTagline: '思维实验｜认知共创｜未来推演',
+  minvistaTagline: '看见新世界，看见新可能',
 
-  minvistaTitle: '通过 Minvista 获取后续更新',
+  minvistaTitle: '通过新见界 · iSeeWorlds 获取作者更新',
 
-  minvistaCopy: 'Minvista 思维实验室是作者用于发布全球化、出海、本地化与 AI 时代企业全球拓展观察的公众号。《出海战略》的配套资源、读者问答、更新说明和后续活动，将优先通过 Minvista 进行通知。',
+  minvistaCopy: '新见界 · iSeeWorlds 是作者持续发布专业观察、写作与活动更新的个人内容品牌。',
 
-  minvistaKeywordPhrase: '回复「出海战略」或「GoxEDGE」',
+  minvistaKeywordPhrase: '',
 
-  minvistaQRCode: 'assets/img/qrcode/minvista-qrcode.png',
+  minvistaQRCode: 'assets/img/qrcode/iseeworlds-qrcode.jpg',
 
   siteLogo: 'assets/img/brand/goxedge-logo.svg',
 
@@ -78,7 +78,7 @@ var BOOK_CONFIG = {
 
   secondaryKeyword: 'GoxEDGE',
 
-  contactEmail: '',
+  contactEmail: 'darren.he@iseeworlds.com',
 
   resourcesAvailable: false
 

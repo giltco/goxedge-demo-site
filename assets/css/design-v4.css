@@ -817,7 +817,7 @@ body.v4-site {
 
 .v4-footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr repeat(4, 1fr);
+  grid-template-columns: 1.4fr repeat(3, 1fr);
   gap: 32px;
   margin-bottom: 40px;
 }

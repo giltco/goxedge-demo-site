@@ -8,21 +8,13 @@ goxedge.com 是 **《出海战略：从走出去到走下去》** 的官方书�
 - 模型说明站：GoxEDGE 全球拓展战略模型解读
 - 章节导读站：按章节进入阅读与问题定位
 - 读者资源站：配套资料、辅助内容与后续更新说明
-- 转化桥梁：将高意向读者与企业用户自然导向 GoxGlobe 企业服务站
+- 作者联系：读者交流、出版、媒体采访、演讲、高校与行业活动、企业共读及专业话题
 
-GoxEDGE 不是企业咨询服务主站，也不是 SaaS 产品站或通用咨询落地页。
+本站不承担企业咨询产品展示，也不作为商业服务平台、SaaS 产品站或咨询销售页面。
 
-## GoxGlobe 角色
+## 作者更新
 
-[GoxGlobe 企业服务站](https://goxglobe.com) 面向企业服务场景，把书中方法与 GoxEDGE 模型转化为：
-
-- 出海战略诊断
-- 路径共创
-- 组织承接
-- 阶段复盘
-- 企业共读与管理层工作坊
-
-**关系简述：** GoxEDGE 负责把读者带进方法体系；GoxGlobe 负责把方法体系带进企业现场。
+[新见界 · iSeeWorlds](https://iseeworlds.com/) 是何敏（Darren He）的个人内容与专业主页，持续记录全球产品、国际化与本地化、汽车软件、全球经营、AI 与专业工作的观察与写作。在本站，它用于承接作者更新与延伸阅读。
 
 ## 页面结构
 
@@ -31,9 +23,9 @@ GoxEDGE 不是企业咨询服务主站，也不是 SaaS 产品站或通用咨询
 - `/model/` GoxEDGE 全球拓展战略模型
 - `/chapters/` 章节导读
 - `/resources/` 配套资源
-- `/contact/` 企业共读与联系合作
-- `/about/` 关于 GoxEDGE
-- `/updates/` Minvista 后续观察与内容更新
+- `/contact/` 联系作者
+- `/about/` 关于本站
+- `/updates/` 新见界 · iSeeWorlds 作者更新入口
 - `/purchase/` 购买与获取
 - `/privacy/`、`/terms/`、`/sitemap/` 说明页
 
@@ -44,12 +36,13 @@ GoxEDGE 不是企业咨询服务主站，也不是 SaaS 产品站或通用咨询
 
 ## 联系方式
 
-- 合作咨询：[400-600-2950](tel:400-600-2950)
-- 联系邮箱：[info@goxedge.com](mailto:info@goxedge.com)
+- 电话：[180 9278 6828](tel:+8618092786828)
+- Email：[darren.he@iseeworlds.com](mailto:darren.he@iseeworlds.com)
+- 新见界 · iSeeWorlds：https://iseeworlds.com/
 
 ## 配置
 
-- `assets/js/book-config.js` — 书名、作者、出版社、购买链接、Minvista
+- `assets/js/book-config.js` — 书名、作者、出版社、购买链接、作者更新与联系方式
 - `assets/js/site-config.js` — `launchPhase` 与页面可见性开关
 
 ## 发布
