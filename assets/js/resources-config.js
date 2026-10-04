@@ -1,6 +1,6 @@
 /**
 
- * 《出海战略》companion resources catalog — single editable source.
+ * 《出海新势力》companion resources catalog — single editable source.
 
  *
 
@@ -22,7 +22,7 @@
 
 var RESOURCES_CONFIG = {
 
-  pageTitle: '《出海战略》配套资源',
+  pageTitle: '《出海新势力》配套资源',
 
   homeItemIds: [
     'book-charts',
@@ -86,7 +86,7 @@ var RESOURCES_CONFIG = {
 
       id: 'appendix-b',
 
-      title: '附录 B：主要图表索引',
+      title: '主要图表索引',
 
       category: '附录',
 
@@ -110,7 +110,7 @@ var RESOURCES_CONFIG = {
 
       id: 'appendix-c',
 
-      title: '附录 C：核心判断原则索引',
+      title: '附录 B：GoxEDGE 核心判断原则',
 
       category: '附录',
 
@@ -134,7 +134,7 @@ var RESOURCES_CONFIG = {
 
       id: 'appendix-d',
 
-      title: '附录 D：参考资料与延伸阅读',
+      title: '参考资料与延伸阅读',
 
       category: '附录',
 

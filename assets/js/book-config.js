@@ -1,6 +1,6 @@
 /**
 
- * 《出海战略》book launch information — single editable source of truth.
+ * 《出海新势力》book launch information — single editable source of truth.
 
  *
 
@@ -26,17 +26,23 @@
 
 var BOOK_CONFIG = {
 
-  bookTitle: '出海战略',
+  seriesLabel: '全球经营能力系列 01｜中企出海｜走出去',
+
+  bookTitle: '出海新势力',
 
   bookSubtitle: '从走出去到走下去',
 
-  bookChineseTitle: '《出海战略》',
+  bookChineseTitle: '《出海新势力》',
 
-  officialFullTitle: '出海战略：从走出去到走下去',
+  officialFullTitle: '出海新势力',
+
+  bookTagline: '从走出去到走下去',
+
+  bookDescriptor: '起点判断、路径设计、组织承接与全球经营能力',
 
   modelName: 'GoxEDGE 全球拓展战略模型',
 
-  modelDescription: '从起点判断、路径设计到组织承接与长期经营能力',
+  modelDescription: '起点判断、路径设计、组织承接与全球经营能力',
 
   publisher: '机械工业出版社',
 
@@ -74,7 +80,7 @@ var BOOK_CONFIG = {
 
   siteLogoAlt: 'GoxEDGE 全球拓展战略模型',
 
-  minvistaKeyword: '出海战略',
+  minvistaKeyword: '出海新势力',
 
   secondaryKeyword: 'GoxEDGE',
 

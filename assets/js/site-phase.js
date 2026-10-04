@@ -146,7 +146,7 @@
     var root = siteRoot();
     var copy = GATE_COPY[flag] || {
       title: '内容暂不开放',
-      body: '该页面当前未对外公开。如需了解《出海战略》配套资源，请返回首页或通过新见界 · iSeeWorlds 获取更新。'
+      body: '该页面当前未对外公开。如需了解《出海新势力》配套资源，请返回首页或通过新见界 · iSeeWorlds 获取更新。'
     };
     var ctaUrl = config.minvistaCTAUrl || 'updates/index.html';
     var ctaExternal = /^https?:\/\//.test(ctaUrl);

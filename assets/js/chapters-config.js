@@ -1,6 +1,6 @@
 /**
 
- * 《出海战略》chapter guide — reading paths and table of contents (V10.3.0).
+ * 《出海新势力》chapter guide — reading paths and final manuscript table of contents.
 
  *
 
@@ -14,7 +14,7 @@
 
 var CHAPTERS_CONFIG = {
 
-  pageTitle: '《出海战略》阅读指南',
+  pageTitle: '《出海新势力》阅读指南',
 
   readingPaths: [
 
@@ -76,15 +76,15 @@ var CHAPTERS_CONFIG = {
 
       id: 'sustaining',
 
-      title: '已进入多市场长期经营',
+      title: '正在建设全球经营能力',
 
-      chapters: '第 11 章与结语',
+      chapters: '第 11 章',
 
-      description: '适合已进入多市场、需要建立长期经营结构的管理层。',
+      description: '适合已经进入市场、需要把阶段性结果沉淀为全球经营能力的管理层。',
 
       focus: [
 
-        '建立可持续经营结构与长期竞争能力'
+        '在可持续阶段沉淀治理、生态与全球经营能力'
 
       ]
 
@@ -118,7 +118,7 @@ var CHAPTERS_CONFIG = {
 
       title: '企业管理者',
 
-      chapters: '推荐：第 1–5 章，第 11 章与结语',
+      chapters: '推荐：第 1–5 章，第 11 章',
 
       description: '适合用于统一战略目标、判断启动条件、识别资源边界和组织承接要求。'
 
@@ -178,15 +178,7 @@ var CHAPTERS_CONFIG = {
 
     {
 
-      part: '前置',
-
-      chapters: ['推荐序', '前言', '引言']
-
-    },
-
-    {
-
-      part: '第一篇 全球化变局与起点选择',
+      part: '上篇 全球化变局与起点选择',
 
       chapters: [
 
@@ -196,7 +188,7 @@ var CHAPTERS_CONFIG = {
 
         '第 3 章 GoxEDGE 战略模型',
 
-        '第 4 章 起点校准与能力评估',
+        '第 4 章 起点校准与准备度评估',
 
         '第 5 章 起点判断与路径设计'
 
@@ -206,7 +198,7 @@ var CHAPTERS_CONFIG = {
 
     {
 
-      part: '第二篇 从探索到可持续的六阶段推进',
+      part: '下篇 从探索到可持续的六阶段推进',
 
       chapters: [
 
@@ -228,9 +220,9 @@ var CHAPTERS_CONFIG = {
 
     {
 
-      part: '收尾',
+      part: '后记与致谢',
 
-      chapters: ['结语', '后记', '致谢']
+      chapters: ['后记', '致谢']
 
     },
 
@@ -242,11 +234,7 @@ var CHAPTERS_CONFIG = {
 
         '附录 A：GoxEDGE 方法应用说明',
 
-        '附录 B：GoxEDGE 主要图表索引',
-
-        '附录 C：GoxEDGE 核心判断原则索引',
-
-        '附录 D：参考资料与延伸阅读'
+        '附录 B：GoxEDGE 核心判断原则'
 
       ]
 

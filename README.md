@@ -1,6 +1,6 @@
-# GoxEDGE 出海战略书籍配套站
+# 《出海新势力》官方书籍与 GoxEDGE 方法配套站
 
-goxedge.com 是 **《出海战略：从走出去到走下去》** 的官方书籍配套站。
+goxedge.com 是 **《出海新势力》** 的官方书籍与 GoxEDGE 方法配套站。方法名称是 **GoxEDGE 全球拓展战略模型**。命题是 **从走出去到走下去**。
 
 ## GoxEDGE 角色
 
@@ -32,7 +32,7 @@ goxedge.com 是 **《出海战略：从走出去到走下去》** 的官方书�
 ## 品牌资产
 
 - 站点 Logo / Favicon：`assets/img/brand/goxedge-logo.png`
-- 页头品牌文案：GoxEDGE 出海战略 / 中企出海从走出去到走下去
+- 页头品牌文案：GoxEDGE / 全球拓展战略模型
 
 ## 联系方式
 

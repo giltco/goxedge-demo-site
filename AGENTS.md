@@ -6,7 +6,7 @@ Working rules for anyone (human or agent) editing the goxedge.com codebase.
 
 ## Project context
 
-**goxedge.com** is the companion resource website for the book **《出海战略：从走出去到走下去》** (author: 何敏, publisher: 机械工业出版社).
+**goxedge.com** is the companion website for the book **《出海新势力》** and the **GoxEDGE 全球拓展战略模型** (author: 何敏, publisher: 机械工业出版社). The line “从走出去到走下去” is the tagline, not the book title.
 
 **GoxEDGE** is the strategic model / method brand **inside the book** — the **GoxEDGE 全球拓展战略模型**. It is **not** the book title.
 
@@ -25,10 +25,10 @@ Current target phase: **`release-ready`** — polished and publication-ready; fi
 
 | Use | Do not use |
 |-----|------------|
-| 《出海战略》 | 《GoxEDGE》 |
-| 《出海战略：从走出去到走下去》 | GoxEDGE book / GoxEDGE 图书 |
-| GoxEDGE 全球拓展战略模型 | GoxEDGE as book title |
-| 《出海战略》读者配套资源站 | |
+| 《出海新势力》 | 《出海战略》, 《GoxEDGE》 |
+| GoxEDGE 全球拓展战略模型 | GoxEDGE as the book title |
+| 从走出去到走下去 | as the book title |
+| 《出海新势力》官方书籍与方法配套站 | |
 
 **GoxEDGE** in nav/brand mark = model site identity at goxedge.com, not book title.
 
@@ -96,7 +96,7 @@ Empty fields show graceful placeholders: 即将更新, 随书更新, 购买链�
 
 ## Product boundaries
 
-1. **GoxEDGE** — Model / method brand; companion resources for 《出海战略》.
+1. **GoxEDGE** — Model / method brand inside 《出海新势力》.
 2. **GILTOS** — Hidden (`showGiltosDemo: false`). No demo CTAs in HTML or nav.
 3. **GILTCO / GoxGlobe** — No public relationship on goxedge.com.
 4. **新见界 · iSeeWorlds** — Author's personal content and professional site. Legacy JS keys may still use the `minvista` prefix.

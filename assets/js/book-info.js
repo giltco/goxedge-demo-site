@@ -12,11 +12,11 @@
   ];
 
   var PAGE_TITLES = {
-    companionHome: function (book) {
-      return bookValue(book, 'bookChineseTitle') + '读者配套资源站';
+    companionHome: function () {
+      return '出海新势力｜GoxEDGE 全球拓展战略模型｜何敏';
     },
     bookPage: function (book) {
-      return '图书介绍｜' + displayFullTitle(book);
+      return '图书介绍｜' + bookValue(book, 'bookChineseTitle');
     },
     chapterGuide: function (book) {
       return bookValue(book, 'bookChineseTitle') + '阅读指南';
