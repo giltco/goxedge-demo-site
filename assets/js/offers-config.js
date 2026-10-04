@@ -52,9 +52,9 @@ var OFFERS_CONFIG = {
 
     {
 
-      title: '工作坊配套',
+      title: '后续开放',
 
-      description: 'Workshop Canvas 等材料用于企业读书会、管理层研讨和工作坊场景。'
+      description: '模型辅助资料将根据出版进程逐步说明开放方式。'
 
     }
 
@@ -326,7 +326,7 @@ var OFFERS_CONFIG = {
 
       title: '可购买工具资料',
 
-      description: 'Strategy Notebook 等结构化工具材料将根据后续产品化安排逐步开放。',
+      description: 'Strategy Notebook 等阅读记录材料将根据出版进程逐步说明开放方式。',
 
       items: [
 
@@ -362,9 +362,9 @@ var OFFERS_CONFIG = {
 
       id: 'workshop',
 
-      title: '工作坊配套',
+      title: '后续开放',
 
-      description: '用于企业读书会、管理层研讨和工作坊场景的配套材料。',
+      description: '模型辅助资料的开放节奏将在出版后更新。',
 
       items: [
 
@@ -372,23 +372,23 @@ var OFFERS_CONFIG = {
 
           id: 'workshop-canvas',
 
-          title: 'Workshop Canvas',
+          title: '路径讨论画布',
 
-          category: '工作坊画布',
+          category: '模型辅助',
 
-          description: '用于企业内部读书会、管理层研讨和全球拓展路径共识讨论。',
+          description: '用于把书中的阶段判断整理成团队讨论底稿。',
 
           availabilityStatus: 'workshop',
 
           accessType: 'workshop',
 
-          actionLabel: '工作坊配套',
+          actionLabel: '后续开放',
 
-          priceLabel: '工作坊场景使用',
+          priceLabel: '开放节奏待更新',
 
           link: '',
 
-          note: '用于企业内部读书会、管理层研讨和全球拓展路径共识讨论，不作为普通公开下载材料。'
+          note: '正式开放前仅展示规划状态，不提供下载。'
 
         }
 

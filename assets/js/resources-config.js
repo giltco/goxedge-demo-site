@@ -278,21 +278,21 @@ var RESOURCES_CONFIG = {
 
       id: 'workshop-canvas',
 
-      title: 'Workshop Canvas',
+      title: '路径讨论画布',
 
-      category: '工作坊画布',
+      category: '模型辅助',
 
-      description: '用于企业读书会、管理层研讨和工作坊场景下的团队共创。',
+      description: '用于把书中的阶段判断整理成团队讨论底稿。正式开放节奏以后续说明为准。',
 
       availabilityStatus: 'workshop',
 
       accessType: 'workshop',
 
-      actionLabel: '工作坊配套',
+      actionLabel: '后续开放',
 
       link: '',
 
-      note: '适用于企业读书会、管理层研讨或工作坊场景，不作为普通公开下载材料。',
+      note: '正式开放前仅展示规划状态，不提供下载。',
 
       updatedAt: ''
 

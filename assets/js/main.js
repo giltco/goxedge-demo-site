@@ -4,11 +4,16 @@ document.addEventListener('DOMContentLoaded', function () {
   var v4Nav = document.querySelector('.v4-nav.nav-menu');
 
   if (toggle && navShell) {
+    if (!toggle.hasAttribute('aria-expanded')) toggle.setAttribute('aria-expanded', 'false');
+    if (v4Nav && !v4Nav.id) v4Nav.id = 'site-nav';
+    if (v4Nav) toggle.setAttribute('aria-controls', v4Nav.id);
     toggle.addEventListener('click', function () {
-      navShell.classList.toggle('nav-open');
-      if (v4Nav) v4Nav.classList.toggle('is-open');
+      var open = !navShell.classList.contains('nav-open');
+      navShell.classList.toggle('nav-open', open);
+      if (v4Nav) v4Nav.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       var gxNav = document.querySelector('.gx-nav.nav-menu');
-      if (gxNav) gxNav.classList.toggle('is-open');
+      if (gxNav) gxNav.classList.toggle('is-open', open);
     });
   }
 

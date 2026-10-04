@@ -4,7 +4,7 @@
   var AVAILABILITY_META = {
     'book-linked': { label: '随书更新', badgeClass: 'v4-status-badge v4-status-badge--book' },
     upcoming: { label: '即将开放', badgeClass: 'v4-status-badge v4-status-badge--soon' },
-    workshop: { label: '工作坊配套', badgeClass: 'v4-status-badge v63-status-badge--workshop' },
+    workshop: { label: '后续开放', badgeClass: 'v4-status-badge v4-status-badge--soon' },
     paid: { label: '需购买 / 读者专享', badgeClass: 'v4-status-badge v63-status-badge--paid' }
   };
 
@@ -13,7 +13,7 @@
     minvista: { label: '通过新见界 · iSeeWorlds', badgeClass: 'v63-access-badge v63-access-badge--minvista' },
     'reader-exclusive': { label: '读者专享', badgeClass: 'v63-access-badge v63-access-badge--reader' },
     'purchase-required': { label: '需购买后获取', badgeClass: 'v63-access-badge v63-access-badge--purchase' },
-    workshop: { label: '工作坊配套', badgeClass: 'v63-access-badge v63-access-badge--workshop' },
+    workshop: { label: '后续开放', badgeClass: 'v63-access-badge v63-access-badge--unavailable' },
     unavailable: { label: '暂未开放', badgeClass: 'v63-access-badge v63-access-badge--unavailable' }
   };
 

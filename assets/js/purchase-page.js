@@ -6,7 +6,7 @@
     upcoming: { label: '即将开放', badgeClass: 'v65-offer-badge v65-offer-badge--upcoming' },
     'book-launch-pending': { label: '上架后更新', badgeClass: 'v65-offer-badge v65-offer-badge--pending' },
     'reader-exclusive': { label: '读者专享', badgeClass: 'v65-offer-badge v65-offer-badge--reader' },
-    workshop: { label: '工作坊配套', badgeClass: 'v65-offer-badge v65-offer-badge--workshop' },
+    workshop: { label: '后续开放', badgeClass: 'v65-offer-badge v65-offer-badge--upcoming' },
     planned: { label: '规划中', badgeClass: 'v65-offer-badge v65-offer-badge--planned' }
   };
 
@@ -16,7 +16,7 @@
     minvista: { label: '通过新见界 · iSeeWorlds', badgeClass: 'v65-access-badge v65-access-badge--minvista' },
     'purchase-required': { label: '需购买后获取', badgeClass: 'v65-access-badge v65-access-badge--purchase' },
     'reader-exclusive': { label: '读者专享', badgeClass: 'v65-access-badge v65-access-badge--reader' },
-    workshop: { label: '工作坊配套', badgeClass: 'v65-access-badge v65-access-badge--workshop' },
+    workshop: { label: '后续开放', badgeClass: 'v65-access-badge v65-access-badge--unavailable' },
     merchandise: { label: '周边产品', badgeClass: 'v65-access-badge v65-access-badge--merch' },
     unavailable: { label: '暂未开放', badgeClass: 'v65-access-badge v65-access-badge--unavailable' }
   };
