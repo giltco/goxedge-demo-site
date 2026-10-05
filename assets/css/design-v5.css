@@ -6625,3 +6625,160 @@ body.v4-site {
   max-width: 980px;
   margin: 18px auto 0;
 }
+
+/* V_NEXT — mobile homepage hero hard fix */
+@media (max-width: 860px) {
+  .v4-site[data-book-page="companionHome"] .v4-hero-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 36px !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-copy,
+  .v4-site[data-book-page="companionHome"] .v4-hero-visual {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-copy {
+    order: 0 !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-visual {
+    order: 1 !important;
+    justify-content: center !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-copy,
+  .v4-site[data-book-page="companionHome"] .v4-hero-copy * {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-label {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.6 !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-title {
+    width: auto !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    writing-mode: horizontal-tb !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-model {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-subtitle {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    writing-mode: horizontal-tb !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-support {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    writing-mode: horizontal-tb !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-body {
+    width: 100% !important;
+    max-width: 36rem !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-visual .v4-book-cover {
+    width: min(320px, 78vw) !important;
+    max-width: 100% !important;
+    position: static !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .v4-site[data-book-page="companionHome"] .v4-hero {
+    padding-top: 44px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-grid {
+    gap: 30px !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-label {
+    margin-bottom: 18px !important;
+    padding: 7px 10px !important;
+    font-size: 0.78rem !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-title {
+    font-size: clamp(2.5rem, 12vw, 3.1rem) !important;
+    line-height: 1.08 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-model {
+    margin-bottom: 18px !important;
+    padding: 8px 11px !important;
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-subtitle {
+    margin-bottom: 18px !important;
+    font-size: clamp(1.3rem, 6vw, 1.55rem) !important;
+    line-height: 1.45 !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-support {
+    margin-bottom: 20px !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .v4-hero-body {
+    margin-bottom: 24px !important;
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .hero-cta-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .v4-site[data-book-page="companionHome"] .hero-cta-row .site-btn,
+  .v4-site[data-book-page="companionHome"] .hero-cta-row .v4-btn {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
