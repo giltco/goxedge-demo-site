@@ -6782,3 +6782,151 @@ body.v4-site {
     max-width: 100% !important;
   }
 }
+
+/* V_NEXT — mobile book page hero hard fix */
+@media (max-width: 860px) {
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-grid,
+  .v4-site[data-book-page="bookPage"] .book-page-hero__grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 36px !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy,
+  .v4-site[data-book-page="bookPage"] .book-page-hero__copy,
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-visual,
+  .v4-site[data-book-page="bookPage"] .book-page-hero__visual {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy,
+  .v4-site[data-book-page="bookPage"] .book-page-hero__copy {
+    order: 0 !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-visual,
+  .v4-site[data-book-page="bookPage"] .book-page-hero__visual {
+    order: 1 !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy,
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy * {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v4-hero-label {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.6 !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v4-hero-title {
+    width: auto !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    writing-mode: horizontal-tb !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-subtitle {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-model {
+    width: auto !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-support {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-intro {
+    width: 100% !important;
+    max-width: 36rem !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v4-book-cover,
+  .v4-site[data-book-page="bookPage"] .v6-book-cover-compact {
+    width: min(320px, 78vw) !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: static !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .v4-site[data-book-page="bookPage"] .v6-book-hero,
+  .v4-site[data-book-page="bookPage"] .book-page-hero {
+    padding-top: 44px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-grid {
+    gap: 30px !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v4-hero-label {
+    margin-bottom: 18px !important;
+    padding: 7px 10px !important;
+    font-size: 0.78rem !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v4-hero-title {
+    font-size: clamp(2.5rem, 12vw, 3.1rem) !important;
+    line-height: 1.08 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-subtitle {
+    font-size: clamp(1.3rem, 6vw, 1.55rem) !important;
+    line-height: 1.45 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-model {
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-support {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-intro {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+}
