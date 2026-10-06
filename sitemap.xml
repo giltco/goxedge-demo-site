@@ -4,6 +4,9 @@
   <url><loc>https://goxedge.com/book/</loc><priority>0.9</priority></url>
   <url><loc>https://goxedge.com/model/</loc><priority>0.9</priority></url>
   <url><loc>https://goxedge.com/resources/</loc><priority>0.9</priority></url>
+  <url><loc>https://goxedge.com/resources/model-at-a-glance/</loc><priority>0.8</priority></url>
+  <url><loc>https://goxedge.com/resources/reader-guide/</loc><priority>0.8</priority></url>
+  <url><loc>https://goxedge.com/resources/discussion-guide/</loc><priority>0.8</priority></url>
   <url><loc>https://goxedge.com/purchase/</loc><priority>0.9</priority></url>
   <url><loc>https://goxedge.com/chapters/</loc><priority>0.9</priority></url>
   <url><loc>https://goxedge.com/faq/</loc><priority>0.8</priority></url>
