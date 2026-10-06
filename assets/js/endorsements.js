@@ -4,7 +4,10 @@
   function approvedItems() {
     var list = window.ENDORSEMENTS_CONFIG || [];
     return list.filter(function (item) {
-      return item && item.approvedForWebsite === true && String(item.quote || '').trim();
+      return item &&
+        item.approvedForWebsite === true &&
+        String(item.name || '').trim() &&
+        String(item.quote || '').trim();
     }).sort(function (a, b) {
       return (a.order || 0) - (b.order || 0);
     });
