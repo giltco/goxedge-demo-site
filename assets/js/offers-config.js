@@ -36,25 +36,9 @@ var OFFERS_CONFIG = {
 
     {
 
-      title: '读者专享资料',
+      title: '读者资料与后续更新',
 
-      description: '自测表、判断模板、行动计划等资料将面向购书读者逐步开放。'
-
-    },
-
-    {
-
-      title: '入门资料与更新',
-
-      description: 'Starter eBook 等轻量资料将通过新见界 · iSeeWorlds 获取更新说明。'
-
-    },
-
-    {
-
-      title: '后续开放',
-
-      description: '模型辅助资料将根据出版进程逐步说明开放方式。'
+      description: '与图书相关的读者资料将根据出版进程逐步开放，具体获取方式以后续页面更新为准。'
 
     }
 
@@ -176,6 +160,8 @@ var OFFERS_CONFIG = {
 
       id: 'reader-resources',
 
+      enabled: false,
+
       title: '读者专享资料',
 
       description: '面向购书读者或指定读者开放的资料，将根据出版进度逐步更新获取方式。',
@@ -286,6 +272,8 @@ var OFFERS_CONFIG = {
 
       id: 'lead-magnet',
 
+      enabled: false,
+
       title: '入门资料与更新',
 
       description: '帮助读者快速理解 GoxEDGE 模型与基本使用方式的轻量资料，将通过新见界 · iSeeWorlds 获取更新说明。',
@@ -324,6 +312,8 @@ var OFFERS_CONFIG = {
 
       id: 'purchase-required',
 
+      enabled: false,
+
       title: '可购买工具资料',
 
       description: 'Strategy Notebook 等阅读记录材料将根据出版进程逐步说明开放方式。',
@@ -361,6 +351,8 @@ var OFFERS_CONFIG = {
     {
 
       id: 'workshop',
+
+      enabled: false,
 
       title: '后续开放',
 

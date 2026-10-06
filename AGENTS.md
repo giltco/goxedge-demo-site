@@ -120,6 +120,8 @@ Professional, restrained, publication-ready, method-oriented, reader-service-ori
 
 Avoid: AI hype, SaaS language, consulting buzzwords, urgency tricks, overpromising downloads.
 
+In release-ready, public resource and purchase pages should prioritize confirmed or already usable items. Planned companion materials should not be exposed as a product catalog before they are ready.
+
 ---
 
 ## Launch-day checklist
