@@ -6,6 +6,10 @@
 
  * Phases: prelaunch | release-ready | launch
 
+ * launchPhase is the publication / site phase. Feature readiness is independent.
+
+ * Publishing the book does not automatically mean every future companion feature is ready for public release.
+
  * Edit launchPhase and show* flags here to switch site modes.
 
  * See presets and launch-day checklist at the bottom of this file.
@@ -32,15 +36,15 @@
 
  *   showPurchaseLinks       — Purchase link placeholders (no URLs until confirmed)
 
- *   showDownloads           — Tool file download buttons (false = coming soon)
+ *   showDownloads           — Real downloadable files only. False until files and rights are confirmed. Not required for book launch.
 
  *
 
  * Deep-site flags:
 
- *   showTools               — Tool preview pages in nav + tool cards / CTA
+ *   showTools               — Future companion tools. False until specific tools are ready. Not required for book launch.
 
- *   showCaseLibrary         — Cases nav + pages (keep false in release-ready)
+ *   showCaseLibrary         — Public case library. Keep false under the current strategy. Not required for book launch.
 
  *   showGiltosDemo          — GILTOS demo links (keep false)
 
@@ -190,7 +194,7 @@ var SITE_CONFIG = {
 
  *
 
- * --- launch preset (final publication) ---
+ * --- launch preset (book publication; tools, cases, and downloads stay off) ---
 
  *
 
@@ -212,15 +216,15 @@ var SITE_CONFIG = {
 
  * showEnterpriseInquiry: true,
 
- * showTools: true,
+ * showTools: false,
 
- * showCaseLibrary: true,
+ * showCaseLibrary: false,
 
  * showGiltosDemo: false,
 
  * showPurchaseLinks: true,
 
- * showDownloads: true,
+ * showDownloads: false,
 
  * showMinvistaCTA: true,
 
@@ -228,29 +232,45 @@ var SITE_CONFIG = {
 
  *
 
- * --- Launch-day checklist (edit book-config.js + flip flags) ---
+ * Book launch does not turn on tools, the case library, or downloads.
 
  *
+
+ * --- Required for book launch ---
+
+ *
+
+ * [ ] BOOK_CONFIG.publicationStatus — confirm the live publication wording
 
  * [ ] BOOK_CONFIG.publicationDate — set when confirmed
 
  * [ ] BOOK_CONFIG.isbn — set when confirmed
 
- * [ ] BOOK_CONFIG.coverImage — upload cover, set path
+ * [ ] BOOK_CONFIG.coverImage — upload the final cover, set path
 
- * [ ] BOOK_CONFIG.jdLink / dangdangLink / ebookLink / wechatReadingLink
-
- * [ ] BOOK_CONFIG.minvistaQRCode — upload QR, set path
-
- * [ ] BOOK_CONFIG.contactEmail — if public email confirmed
-
- * [ ] SITE_CONFIG.showDownloads — true when files ready
-
- * [ ] SITE_CONFIG.launchPhase — 'launch' when fully live
+ * [ ] BOOK_CONFIG.jdLink / dangdangLink / ebookLink / wechatReadingLink — confirmed retailer URLs only
 
  * [ ] sitemap.xml — verify all public routes
 
  * [ ] robots.txt — remove any Disallow rules if added for prelaunch
+
+ * [ ] SITE_CONFIG.launchPhase — 'launch' when the book is publicly published
+
+ *
+
+ * --- Optional and independent of book launch ---
+
+ *
+
+ * [ ] SITE_CONFIG.showDownloads — true only when real files and rights are confirmed
+
+ * [ ] SITE_CONFIG.showTools — true only when specific companion tools are ready
+
+ * [ ] SITE_CONFIG.showCaseLibrary — remains false under the current public strategy
+
+ *
+
+ * These optional flags are not required to publish the book.
 
  */
 

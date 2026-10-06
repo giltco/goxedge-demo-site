@@ -26,14 +26,16 @@
     stage: '阶段',
     cap: '能力',
     mech: '推进机制',
-    judge: '战略判断'
+    judge: '战略判断',
+    readiness: '前置条件'
   };
 
   var TYPE_ACCENTS = {
     stage: null,
     cap: '#062f4f',
     mech: '#f04a23',
-    judge: '#2f7d32'
+    judge: '#2f7d32',
+    readiness: '#6b7c4a'
   };
 
   var STAGE_ICON_ID = {
@@ -52,7 +54,7 @@
     empowerment: 'empowerment'
   };
 
-  /* Inline SVG icon library — V8.0 LOCKED layer semantics */
+  /* Inline SVG icon library */
   var MODEL_SVG = {
     layer: {
       mechanism: '<svg class="v4-model-svg v4-model-svg--label" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7.5A8.2 8.2 0 0 0 6.3 5.4"/><path d="M6.3 5.4H10"/><path d="M6.3 5.4V9.1"/><path d="M4 16.5a8.2 8.2 0 0 0 13.7 2.1"/><path d="M17.7 18.6H14"/><path d="M17.7 18.6v-3.7"/></svg>',
@@ -234,6 +236,19 @@
     );
   }
 
+  function renderReadinessStrip(model) {
+    var readiness = model.readiness;
+    if (!readiness) return '';
+    return (
+      '<button type="button" class="v4-model-readiness" data-v4-readiness="' + escapeHtml(readiness.id) + '">' +
+        '<span class="v4-model-readiness-kicker">前置条件</span>' +
+        '<strong>' + escapeHtml(readiness.title) + '</strong>' +
+        '<span class="v4-model-readiness-sub">' + escapeHtml(readiness.subtitle) + '</span>' +
+        '<span class="v4-model-readiness-support">' + escapeHtml(readiness.support) + '</span>' +
+      '</button>'
+    );
+  }
+
   function renderJudgmentRow(model) {
     var j = model.judgment;
     var cells = j.items.map(function (item) {
@@ -251,12 +266,15 @@
           '<span>战略<br>判断层</span>' +
         '</div>' +
         '<div class="v4-model-row-content">' +
-          '<div class="v4-model-judgment-band">' +
-            '<div class="v4-model-judgment-head">' +
-              '<strong>' + escapeHtml(j.title) + '</strong>' +
-              '<span>' + escapeHtml(j.subtitle) + '</span>' +
+          '<div class="v4-model-judgment-stack">' +
+            renderReadinessStrip(model) +
+            '<div class="v4-model-judgment-band">' +
+              '<div class="v4-model-judgment-head">' +
+                '<strong>' + escapeHtml(j.title) + '</strong>' +
+                '<span>' + escapeHtml(j.subtitle) + '</span>' +
+              '</div>' +
+              '<div class="v4-model-judgment-cells">' + cells + '</div>' +
             '</div>' +
-            '<div class="v4-model-judgment-cells">' + cells + '</div>' +
           '</div>' +
         '</div>' +
       '</div>'
@@ -333,7 +351,7 @@
           '<div class="note-panel__selected">' +
           '<p class="note-panel__badge" style="color:' + escapeHtml(accentColor) + '">' + escapeHtml(typeLabel) + '</p>' +
           '<h3 class="note-panel__detail-title">' + escapeHtml(cap.title) + ' · ' + escapeHtml(cap.en) + '</h3>' +
-          '<p class="note-panel__detail-copy">' + escapeHtml(cap.description) + '</p>' +
+          '<p class="note-panel__detail-copy">' + escapeHtml(cap.description) + (cap.id === 'empowerment' ? '赋能力是贯穿六阶段的战略能力维度，不是路径中的赋能阶段。' : '四大能力贯穿六阶段，不与某一个阶段一一对应，也不是完整的企业能力清单。') + '</p>' +
           '</div>'
         );
       }
@@ -349,6 +367,15 @@
           '</div>'
         );
       }
+    }
+    if (type === 'readiness' && model.readiness) {
+      return (
+        '<div class="note-panel__selected">' +
+        '<p class="note-panel__badge" style="color:' + escapeHtml(accentColor) + '">' + escapeHtml(typeLabel) + '</p>' +
+        '<h3 class="note-panel__detail-title">' + escapeHtml(model.readiness.title) + '</h3>' +
+        '<p class="note-panel__detail-copy">' + escapeHtml(model.readiness.summary) + '</p>' +
+        '</div>'
+      );
     }
     if (type === 'judge') {
       var item = model.judgment.items.find(function (j) { return j.id === id; });
@@ -407,6 +434,11 @@
     root.querySelectorAll('[data-v4-judge]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         selectItem(root, panel, btn, 'judge', btn.getAttribute('data-v4-judge'));
+      });
+    });
+    root.querySelectorAll('[data-v4-readiness]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        selectItem(root, panel, btn, 'readiness', btn.getAttribute('data-v4-readiness'));
       });
     });
 

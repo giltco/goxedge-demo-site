@@ -6,16 +6,13 @@ Working rules for anyone (human or agent) editing the goxedge.com codebase.
 
 ## Project context
 
-**goxedge.com** is the companion website for the book **《出海新势力》** and the **GoxEDGE 全球拓展战略模型** (author: 何敏, publisher: 机械工业出版社). The line “从走出去到走下去” is the tagline, not the book title.
+**goxedge.com** is the official book and method companion site for **《出海新势力》** and the **GoxEDGE 全球拓展战略模型** (author: 何敏, publisher: 机械工业出版社). The line “从走出去到走下去” is the tagline, not the book title.
 
-**GoxEDGE** is the strategic model / method brand **inside the book** — the **GoxEDGE 全球拓展战略模型**. It is **not** the book title.
+**GoxEDGE** is the strategic model / method brand **inside the book** — the **GoxEDGE 全球拓展战略模型**. It is **not** the book title. goxedge.com is not a SaaS product, a consulting sales funnel, or a GILTCO ecosystem site.
 
-Authoritative sources for public copy:
+Editorial source of truth for model and book semantics is the latest finalized manuscript of 《出海新势力》. The verified baseline for this site freeze is **出海新势力_GoxEDGE_V40.0.0_定稿**. That manuscript is not stored in this repository; do not invent a repo path for it.
 
-1. `出海战略全解_GoxEDGE_V10.3.0.pdf` (manuscript)
-2. `出海战略全解_GoxEDGE_书籍配套信息.docx` (book companion information)
-
-**Existing website copy is not source of truth.** Align all public content with the manuscript and companion doc.
+**Existing website copy is not the source of truth.** Align public content with that manuscript. Do not treat older website screenshots or older replica comments as authoritative.
 
 Current target phase: **`release-ready`** — polished and publication-ready; final assets (ISBN, cover, purchase links, QR, downloads) may still be placeholders.
 
@@ -40,7 +37,7 @@ The site supports book launch and reader follow-up:
 
 - Book introduction
 - GoxEDGE model explanation
-- Companion resources (charts, appendices, tools)
+- Companion resources (charts, appendices, reader guides)
 - Chapter reading guidance
 - iSeeWorlds author updates
 - Low-key reader / media / enterprise discussion contact
@@ -51,7 +48,7 @@ It must **not** feel like a SaaS product, AI tool, consulting sales funnel, or G
 
 ## Primary navigation (release-ready)
 
-首页 · 图书 · 模型 · 章节 · 资源 · 联系 · 关于
+首页 · 图书 · 模型 · 章节 · 资源 · 问答 · 联系 · 关于
 
 **Do not show:** GILTOS Demo, GILTCO ecosystem, GoxGlobe, case library, certification, academy, SaaS platform links.
 
@@ -64,7 +61,7 @@ It must **not** feel like a SaaS product, AI tool, consulting sales funnel, or G
 | `assets/js/book-config.js` | `BOOK_CONFIG` — titles, author, publisher, purchase links, iSeeWorlds values, cover |
 | `assets/js/site-config.js` | `SITE_CONFIG` — `launchPhase` and `show*` flags |
 | `assets/js/resources-config.js` | Resource catalog (8 approved categories) |
-| `assets/js/chapters-config.js` | Reading paths + TOC (V10.3.0) |
+| `assets/js/chapters-config.js` | Reading paths and table of contents |
 
 `assets/js/site-phase.js` applies flags on load — no build step.
 
@@ -72,12 +69,24 @@ It must **not** feel like a SaaS product, AI tool, consulting sales funnel, or G
 
 ```
 launchPhase: 'release-ready'
-showBookDetails, showFullFramework, showResourcePreview, showTools: true
-showChapterGuide, showChartIndex: true
-showCaseLibrary, showGiltosDemo: false
-showPurchaseLinks: true, showDownloads: false
-showMinvistaCTA, showContactCTA, showEnterpriseInquiry: true
+showBookDetails: true
+showFrameworkShort: false
+showFullFramework: true
+showResourcePreview: true
+showChapterGuide: true
+showChartIndex: true
+showMinvistaSection: true
+showEnterpriseInquiry: true
+showTools: false
+showCaseLibrary: false
+showGiltosDemo: false
+showPurchaseLinks: true
+showDownloads: false
+showMinvistaCTA: true
+showContactCTA: true
 ```
+
+Book publication does not automatically enable Tools, the Case Library, or Downloads. Those feature flags stay independent and must be confirmed on their own.
 
 ---
 
@@ -100,7 +109,8 @@ Empty fields show graceful placeholders: 即将更新, 随书更新, 购买链�
 2. **GILTOS** — Hidden (`showGiltosDemo: false`). No demo CTAs in HTML or nav.
 3. **GILTCO / GoxGlobe** — No public relationship on goxedge.com.
 4. **新见界 · iSeeWorlds** — Author's personal content and professional site. Legacy JS keys may still use the `minvista` prefix.
-5. **Cases** — Book uses composite anonymized cases (Avora Motors, etc.); no public case detail pages.
+5. **Cases** — No public case library. `/cases/` stays unavailable and explains that book cases are not a public library.
+6. **Tools** — No public tool entry. `/tools/` stays unavailable. Companion tools are not part of book launch.
 
 ---
 
@@ -114,14 +124,21 @@ Avoid: AI hype, SaaS language, consulting buzzwords, urgency tricks, overpromisi
 
 ## Launch-day checklist
 
-Edit `book-config.js` when confirmed:
+Required for book launch. Edit `book-config.js` when confirmed:
 
-- [ ] `publicationDate`, `isbn`, `coverImage`
-- [ ] `jdLink`, `dangdangLink`, `ebookLink`, `wechatReadingLink`
-- [ ] `minvistaQRCode` (iSeeWorlds QR only if the real asset exists), `contactEmail`
-- [ ] `SITE_CONFIG.showDownloads` → true when files ready
-- [ ] `SITE_CONFIG.launchPhase` → `launch`
+- [ ] `publicationStatus`, `publicationDate`, `isbn`, `coverImage`
+- [ ] `jdLink`, `dangdangLink`, `ebookLink`, `wechatReadingLink` — confirmed retailer URLs only
 - [ ] `sitemap.xml` verified
+- [ ] `robots.txt` checked
+- [ ] `SITE_CONFIG.launchPhase` → `launch`
+
+Optional, and independent of publication:
+
+- [ ] `SITE_CONFIG.showDownloads` → true only when real files and rights are confirmed
+- [ ] `SITE_CONFIG.showTools` → true only when specific companion tools are ready
+- [ ] `SITE_CONFIG.showCaseLibrary` stays false under the current public strategy
+
+Publishing the book does not turn on tools, the case library, or downloads.
 
 ---
 

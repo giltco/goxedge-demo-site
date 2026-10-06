@@ -7079,3 +7079,231 @@ body.v4-site {
     color: #111 !important;
   }
 }
+
+/* PASS 1 — shared book identity. Selectors match existing hero rules so both pages use one scale. */
+@media (min-width: 861px) {
+  .v4-site[data-book-page="companionHome"] .book-identity-series,
+  .v4-site[data-book-page="bookPage"] .book-identity-series {
+    display: inline-block;
+    margin: 0 0 22px;
+    padding: 8px 14px;
+    border: 1px solid rgba(6, 47, 79, 0.18);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--v4-navy, #062f4f);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-title,
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy .book-identity-title {
+    font-family: var(--v4-font-serif);
+    font-size: clamp(2.75rem, 4.1vw, 4.35rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.045em !important;
+    max-width: 8.2em !important;
+    margin: 0 0 18px !important;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-model,
+  .v4-site[data-book-page="bookPage"] .book-identity-model {
+    display: inline-block !important;
+    margin: 0 0 16px !important;
+    padding: 8px 12px !important;
+    border-radius: 6px;
+    background: rgba(6, 47, 79, 0.06);
+    color: var(--v4-navy, #062f4f);
+    font-size: 0.95rem !important;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-subtitle,
+  .v4-site[data-book-page="bookPage"] .book-identity-subtitle {
+    display: block;
+    margin: 0 0 14px !important;
+    font-size: clamp(1.35rem, 1.8vw, 1.7rem) !important;
+    line-height: 1.4 !important;
+    color: var(--v4-ink, #0a1424) !important;
+    font-weight: 600;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-descriptor,
+  .v4-site[data-book-page="bookPage"] .book-identity-descriptor {
+    margin: 0 0 18px !important;
+    max-width: 36rem;
+    color: var(--v4-muted, #42526b) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-intro,
+  .v4-site[data-book-page="bookPage"] .book-identity-intro {
+    max-width: 38rem !important;
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+}
+@media (max-width: 1100px) and (min-width: 861px) {
+  .v4-site[data-book-page="companionHome"] .book-identity-title,
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy .book-identity-title {
+    font-size: clamp(2.55rem, 4.7vw, 3.9rem) !important;
+  }
+}
+@media (max-width: 860px) and (min-width: 521px) {
+  .v4-site[data-book-page="companionHome"] .book-identity-title,
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy .book-identity-title {
+    font-size: clamp(2.35rem, 8vw, 3.15rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.12 !important;
+    max-width: 100% !important;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-subtitle,
+  .v4-site[data-book-page="bookPage"] .book-identity-subtitle {
+    font-size: clamp(1.2rem, 3.2vw, 1.45rem) !important;
+    line-height: 1.45 !important;
+    color: var(--v4-ink, #0a1424) !important;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-model,
+  .v4-site[data-book-page="bookPage"] .book-identity-model {
+    font-size: 0.92rem !important;
+  }
+}
+@media (max-width: 520px) {
+  .v4-site[data-book-page="companionHome"] .book-identity-title,
+  .v4-site[data-book-page="bookPage"] .v6-book-hero-copy .book-identity-title {
+    font-size: clamp(2.5rem, 12vw, 3.1rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.08 !important;
+    max-width: 100% !important;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-model,
+  .v4-site[data-book-page="bookPage"] .book-identity-model {
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-subtitle,
+  .v4-site[data-book-page="bookPage"] .book-identity-subtitle {
+    font-size: clamp(1.3rem, 6vw, 1.55rem) !important;
+    line-height: 1.45 !important;
+    color: var(--v4-ink, #0a1424) !important;
+  }
+  .v4-site[data-book-page="companionHome"] .book-identity-descriptor,
+  .v4-site[data-book-page="bookPage"] .book-identity-descriptor,
+  .v4-site[data-book-page="companionHome"] .book-identity-intro,
+  .v4-site[data-book-page="bookPage"] .book-identity-intro {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+  }
+}
+
+.author-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.85fr);
+  gap: 36px;
+  align-items: start;
+  padding: 32px 36px;
+  border: 1px solid rgba(10, 20, 36, 0.1);
+  border-radius: 18px;
+  background: #fff;
+}
+.author-panel .section-title {
+  margin-bottom: 12px;
+}
+.author-panel p {
+  margin: 0 0 0.85rem;
+  color: var(--v4-muted, #42526b);
+  line-height: 1.8;
+}
+.author-panel__name {
+  margin: 0 0 12px;
+  color: var(--v4-ink, #0a1424);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.author-panel__aside ul {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+.author-panel__aside li {
+  margin: 0;
+  padding: 0.7rem 0;
+  border-top: 1px solid rgba(10, 20, 36, 0.1);
+  color: var(--v4-ink, #0a1424);
+  line-height: 1.5;
+}
+.about-page {
+  max-width: 820px;
+}
+.about-block {
+  margin: 0 0 2.25rem;
+  padding-top: 0.25rem;
+}
+.about-block h2 {
+  margin: 0 0 0.75rem;
+}
+.about-block p {
+  margin: 0 0 0.85rem;
+  color: var(--v4-muted, #42526b);
+  font-size: 16px;
+  line-height: 1.85;
+}
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+}
+@media (max-width: 768px) {
+  .author-panel {
+    grid-template-columns: 1fr;
+    padding: 22px 18px;
+  }
+}
+
+.model-judgment-chain {
+  max-width: 52rem;
+  margin: 0 auto 28px;
+  text-align: center;
+  color: var(--v4-ink, #0a1424);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.model-boundary-block {
+  max-width: 880px;
+  margin: 60px auto 0;
+  padding-top: 38px;
+  border-top: 1px solid rgba(10, 20, 36, 0.12);
+  text-align: center;
+}
+.model-boundary-block .section-title {
+  margin-bottom: 12px;
+}
+.model-boundary-block p {
+  margin: 0 auto;
+  color: var(--v4-muted, #42526b);
+  font-size: 16px;
+  line-height: 1.8;
+}
+@media (max-width: 640px) {
+  .model-boundary-block {
+    margin-top: 40px;
+    padding-top: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .v4-reading-table {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .v4-reading-table tbody {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .v4-reading-table tr,
+  .v4-reading-table td {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
