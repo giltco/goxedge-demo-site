@@ -298,7 +298,7 @@ var OFFERS_CONFIG = {
 
           priceLabel: '免费 / 领取方式待更新',
 
-          link: 'https://iseeworlds.com/',
+          link: 'https://iseeworlds.com/?utm_source=goxedge&utm_medium=referral&utm_campaign=ecosystem',
 
           note: '用于快速理解 GoxEDGE 全球拓展战略模型的简版说明资料，适合首次接触本书方法框架的读者。'
 

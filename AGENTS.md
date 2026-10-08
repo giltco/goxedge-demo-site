@@ -108,7 +108,7 @@ Empty fields show graceful placeholders: 即将更新, 随书更新, 购买链�
 1. **GoxEDGE** — Model / method brand inside 《出海新势力》.
 2. **GILTOS** — Hidden (`showGiltosDemo: false`). No demo CTAs in HTML or nav.
 3. **GILTCO / GoxGlobe** — No public relationship on goxedge.com.
-4. **新见界 · iSeeWorlds** — Author's personal content and professional site. Legacy JS keys may still use the `minvista` prefix.
+4. **新见界 · iSeeWorlds** — Author's personal thinking and writing space. Legacy JS keys may still use the `minvista` prefix.
 5. **Cases** — No public case library. `/cases/` stays unavailable and explains that book cases are not a public library.
 6. **Tools** — No public tool entry. `/tools/` stays unavailable. Companion tools are not part of book launch.
 

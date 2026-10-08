@@ -15,7 +15,7 @@ goxedge.com 是 **《出海新势力》** 的官方书籍与 GoxEDGE 方法配�
 
 ## 作者更新
 
-[新见界 · iSeeWorlds](https://iseeworlds.com/) 是何敏（Darren He）的个人内容与专业主页，持续记录全球产品、国际化与本地化、汽车软件、全球经营、AI 与专业工作的观察与写作。在本站，它用于承接作者更新与延伸阅读。
+[新见界 · iSeeWorlds](https://iseeworlds.com/?utm_source=goxedge&utm_medium=referral&utm_campaign=ecosystem) 是何敏的个人思想与写作空间，持续记录全球产品、国际化与本地化、汽车软件、全球经营、AI 与专业工作的观察与写作。在本站，它用于承接作者更新与延伸阅读。
 
 ## 页面结构
 
@@ -39,7 +39,6 @@ goxedge.com 是 **《出海新势力》** 的官方书籍与 GoxEDGE 方法配�
 ## 联系方式
 
 - 微信：iseeworlds-com
-- Email：[darren.he@iseeworlds.com](mailto:darren.he@iseeworlds.com)
 - Email：[darren.he@iseeworlds.com](mailto:darren.he@iseeworlds.com)
 - 新见界 · iSeeWorlds：https://iseeworlds.com/
 

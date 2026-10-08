@@ -70,7 +70,7 @@ var BOOK_CONFIG = {
 
   minvistaTitle: '通过新见界 · iSeeWorlds 获取作者更新',
 
-  minvistaCopy: '新见界 · iSeeWorlds 是作者持续发布专业观察、写作与活动更新的个人内容品牌。',
+  minvistaCopy: '新见界 · iSeeWorlds 是何敏的个人思想与写作空间，持续记录专业观察、写作与活动更新。',
 
   minvistaKeywordPhrase: '',
 

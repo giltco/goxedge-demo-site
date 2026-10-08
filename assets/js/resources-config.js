@@ -242,7 +242,7 @@ var RESOURCES_CONFIG = {
 
       actionLabel: '访问新见界 · iSeeWorlds',
 
-      link: 'https://iseeworlds.com/',
+      link: 'https://iseeworlds.com/?utm_source=goxedge&utm_medium=referral&utm_campaign=ecosystem',
 
       note: '正式开放前，可通过新见界 · iSeeWorlds 关注后续更新。',
 

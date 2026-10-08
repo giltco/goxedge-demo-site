@@ -106,7 +106,7 @@ var SITE_CONFIG = {
 
 
 
-  minvistaCTAUrl: 'https://iseeworlds.com/',
+  minvistaCTAUrl: 'https://iseeworlds.com/?utm_source=goxedge&utm_medium=referral&utm_campaign=ecosystem',
 
   minvistaCTALabel: '访问新见界 · iSeeWorlds',
 
