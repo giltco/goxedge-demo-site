@@ -38,7 +38,8 @@ goxedge.com 是 **《出海新势力》** 的官方书籍与 GoxEDGE 方法配�
 
 ## 联系方式
 
-- 电话：[180 9278 6828](tel:+8618092786828)
+- 微信：iseeworlds-com
+- Email：[darren.he@iseeworlds.com](mailto:darren.he@iseeworlds.com)
 - Email：[darren.he@iseeworlds.com](mailto:darren.he@iseeworlds.com)
 - 新见界 · iSeeWorlds：https://iseeworlds.com/
 
